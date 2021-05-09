@@ -5,9 +5,15 @@ The main intent is to provide constant support through a chatbot application whi
 ## About
 ![image](https://user-images.githubusercontent.com/47170879/117572292-e6283880-b0ef-11eb-94a4-9610f6bd00d3.png)
 
-## Home-Page
-![image](https://user-images.githubusercontent.com/47170879/117572304-f213fa80-b0ef-11eb-83ed-fbf973c66384.png)
 
-## Conditions - Page
-![image](https://user-images.githubusercontent.com/47170879/117572325-0a841500-b0f0-11eb-8368-28493f6d93f1.png)
+![Aloha - Google Chrome 09-05-2021 18_31_25](https://user-images.githubusercontent.com/47170879/117574424-a581ec80-b0fa-11eb-838c-634ba730a425.png)
+
+
+![Aloha - Google Chrome 09-05-2021 18_31_58](https://user-images.githubusercontent.com/47170879/117574431-adda2780-b0fa-11eb-8643-870359fd9937.png)
+
+
+![Aloha - Google Chrome 09-05-2021 18_33_21](https://user-images.githubusercontent.com/47170879/117574441-b5013580-b0fa-11eb-99d0-dc9be816c587.png)
+
+
+
 
