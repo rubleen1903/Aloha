@@ -1,0 +1,87 @@
+.conditions-topic {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+
+  color: #ff5757;
+}
+.background1{
+  background-image: url('/src/assets/bgc.jpg');
+}
+.depression-image {
+  border-radius: 20px;
+  width: 245px;
+  height: 205px;
+  background-image: url('/src/assets/depression.jpeg');
+  background-size: cover;
+  opacity:1!important;
+}
+
+.anxiety-image {
+  border-radius: 20px;
+  width: 245px;
+  height: 205px;
+  background-image: url('/src/assets/anxiety.jpg');
+  background-size: cover;
+}
+
+.ptsd-image {
+  border-radius: 20px;
+  width: 245px;
+  height: 205px;
+  background-image: url('/src/assets/Schizophrenia.jpg');
+  background-size: cover;
+}
+
+.ocd-image {
+  border-radius: 20px;
+  width: 245px;
+  height: 205px;
+  background-image: url('/src/assets/ocd.jpg');
+  background-size: cover;
+}
+
+.panic-attack-image {
+  border-radius: 20px;
+  width: 245px;
+  height: 205px;
+  background-image: url('/src/assets/panic.jpg');
+  background-size: cover;
+}
+
+.bipolar-image {
+  border-radius: 20px;
+  width: 245px;
+  height: 205px;
+  background-image: url('/src/assets/bipolar.jpg');
+  background-size: cover;
+}
+
+.eating-disorder-image {
+  border-radius: 20px;
+  width: 245px;
+  height: 205px;
+  background-image: url('/src/assets/eating.jpg');
+  background-size: cover;
+}
+.antipersonality {
+  border-radius: 20px;
+  width: 245px;
+  height: 205px;
+  background-image: url('/src/assets/antisocial.jpg');
+  background-size: cover;
+}
+
+.condition-title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  /* padding: 30px; */
+  color: white;
+}

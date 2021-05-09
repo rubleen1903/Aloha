@@ -1,0 +1,141 @@
+import React from 'react';
+import { ConversationalForm } from 'conversational-form';
+
+export default class MyForm extends React.Component {
+  constructor(props) {
+    super(props);
+    this.formFields = [
+      {
+        tag: 'input',
+        type: 'text',
+        name: 'name',
+        'cf-questions': 'May I know your name?',
+      },
+      {
+        tag: 'input',
+        type: 'radio',
+        name: 'yes',
+        'cf-questions':
+          'Do you mind if I ask some questions to learn more about you?',
+        'cf-label': 'Nope',
+        value: 'yes',
+      },
+      {
+        tag: 'input',
+        type: 'radio',
+        name: 'yes',
+        'cf-label': 'Go Ahead',
+        value: 'yes',
+      },
+      {
+        tag: 'input',
+        type: 'radio',
+        name: 'pregnancy',
+        'cf-questions': `Great! Let's get started. What's on your mind today ?`,
+        'cf-label': 'Tension',
+        value: 'first',
+      },
+      {
+        tag: 'input',
+        type: 'radio',
+        name: 'pregnancy',
+        'cf-label': 'Sad',
+        value: 'second',
+      },
+      {
+        tag: 'input',
+        type: 'radio',
+        name: 'pregnancy',
+        'cf-label': 'Depression',
+        value: 'second',
+      },
+      {
+        tag: 'input',
+        type: 'radio',
+        name: 'pregnancy',
+        'cf-label': 'Family issues',
+        value: 'postpartum',
+      },
+      {
+        tag: 'input',
+        type: 'radio',
+        name: 'mood',
+        'cf-questions': `I see. How are you feeling today?`,
+        'cf-label': 'Good',
+        'cf-image': 'https://openmoji.org/data/color/svg/1F60C.svg',
+        tabindex: '1',
+        value: 'good',
+      },
+      {
+        tag: 'input',
+        type: 'radio',
+        name: 'mood',
+        'cf-questions': `I see. How are you feeling today?`,
+        'cf-label': 'Meh',
+        'cf-image': 'https://openmoji.org/data/color/svg/1F610.svg',
+        tabindex: '2',
+        value: 'meh',
+      },
+      {
+        tag: 'input',
+        type: 'radio',
+        name: 'mood',
+        'cf-questions': `I see. How are you feeling today?`,
+        'cf-label': 'Sad',
+        'cf-image': 'https://openmoji.org/data/color/svg/1F641.svg',
+        tabindex: '3',
+        value: 'sad',
+      },
+      {
+        tag: 'input',
+        type: 'radio',
+        name: 'mood',
+        'cf-questions': `I see. How are you feeling today?`,
+        'cf-label': 'Anxious',
+        'cf-image': 'https://openmoji.org/data/color/svg/1F630.svg',
+        tabindex: '4',
+        value: 'anxious',
+      },
+      {
+        tag: 'input',
+        type: 'text',
+        name: 'reason',
+        'cf-questions': 'Could you tell me why you feel that way?',
+      },
+    ];
+
+    this.submitCallback = this.submitCallback.bind(this);
+  }
+
+  componentDidMount() {
+    this.cf = ConversationalForm.startTheConversation({
+      options: {
+        theme: 'dark',
+        submitCallback: this.submitCallback,
+        preventAutoFocus: true,
+        loadExternalStyleSheet: true,
+        robotImage: 'https://i.imgur.com/uwlhxaa.png',
+      },
+      tags: this.formFields,
+    });
+    this.cf.addRobotChatResponse(
+      'Hi There! Welcome to our website! My name is Aloha and I will be helping you today.'
+    );
+    this.elem.appendChild(this.cf.el);
+  }
+
+  submitCallback() {
+    var formDataSerialized = this.cf.getFormData(true);
+    console.log('Formdata, obj:', formDataSerialized);
+    this.cf.addRobotChatResponse(
+      'Thanks for telling me! I have some helpful results below for you.' );
+  }
+
+  render() {
+    return (
+      // <div style={{ height: 100, backgroundColor: 'black' }}>
+      <div ref={(ref) => (this.elem = ref)} style={{ marginTop: 10 }} />
+      // </div>
+    );
+  }
+}
